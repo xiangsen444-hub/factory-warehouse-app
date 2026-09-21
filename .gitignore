@@ -1,5 +1,45 @@
-__pycache__/
-*.pyc
+# Warehouse databases and SQLite sidecar files
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite-journal
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.sqlite3-journal
+
+# Local warehouse content and backups
 backups/
 uploads/
+config.json
+label_tool_settings.json
+
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python environments and generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Logs and OS metadata
 *.log
+.DS_Store
+Thumbs.db
